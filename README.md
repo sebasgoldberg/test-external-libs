@@ -11,10 +11,11 @@ You can found the specific code for reuse in the following files:
 - `./webapp/index.html`:
 This is only for test environment, you do not need this in SAP Gateway Server.
 ```html
-    <!-- Here we told told to SAPUI5 where it can find our library resources -->
+    <!-- Here we told told to SAPUI5 where it can find our library resources using the attribute data-sap-ui-resourceroots -->
+    <!-- Note that the library is loaded at bootstrap with attribute data-sap-ui-libs -->
     <script id="sap-ui-bootstrap"
         src="https://sapui5.hana.ondemand.com/1.52.13/resources/sap-ui-core.js"
-        data-sap-ui-libs="sap.m"
+        data-sap-ui-libs="sap.m,iamsoft.libs.external.polyfill"
         data-sap-ui-theme="sap_belize"
         data-sap-ui-compatVersion="edge"
         data-sap-ui-preload="async"
