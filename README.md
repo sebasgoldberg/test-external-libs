@@ -10,25 +10,32 @@ You can found the specific code for reuse in the following files:
 
 - `./webapp/index.html`:
 This is only for test environment, you do not need this in SAP Gateway Server.
-```javascript
-			data-sap-ui-resourceroots='{
-                "sap.ui.demo.basicTemplate": "./",
-                <!-- Here we told told to SAPUI5 where it can find our library resources -->
-                "cencosud.libs.external.polyfill": "/cencosud/libs/external/polyfill/"
+```html
+    <script id="sap-ui-bootstrap"
+        src="https://sapui5.hana.ondemand.com/1.52.13/resources/sap-ui-core.js"
+        data-sap-ui-libs="sap.m"
+        data-sap-ui-theme="sap_belize"
+        data-sap-ui-compatVersion="edge"
+        data-sap-ui-preload="async"
+        data-sap-ui-resourceroots='{
+            "sap.ui.demo.basicTemplate": "./",
+            <!-- Here we told told to SAPUI5 where it can find our library resources -->
+            "cencosud.libs.external.polyfill": "/cencosud/libs/external/polyfill/"
+            }'>
+    </script>
 ```
 Obiously there is configured a proxy mapping the resources of the library with the specified path.
 
 - `./manifest.json`: This is the important part. We indicate ourr custom library as dependency.
 ```json
-	"sap.ui5": {
-        ...
-		"dependencies": {
-			...
-			"libs": {
-                ...
+    "sap.ui5": {
+        "dependencies": {
+            "libs": {
+                "<other library>": {},
                 "cencosud.libs.external.polyfill": {}
-			}
-		},
+            }
+        }
+    }
 ```
 
 - `./webapp/view.App.view.xml`: This is an example where is used one of the controls of the library.
