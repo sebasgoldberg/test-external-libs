@@ -27,5 +27,7 @@
     "grunt-zip": "^0.16.2",
     "load-grunt-tasks": "^4.0.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "external-libs": "^0.1.0"
+  }
 }

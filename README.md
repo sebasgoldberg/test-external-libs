@@ -1,10 +1,19 @@
 # SAPUI5 External Library Usage Test
+
+## Intro
+
 This is a basic app example that shows how you can consume an external lib.
 
 Particularly the used lib encapsulate:
 
 - The babel polyfills nedded for async/await statements.
 - MyControl.
+
+The lib is consumed as node package and you can find its code in the following repository:
+
+- [https://github.com/sebasgoldberg/external-libs.git](https://github.com/sebasgoldberg/external-libs.git)
+
+## Code For Reuse The Library
 
 You can found the specific code for reuse in the following files:
 
@@ -21,13 +30,13 @@ This is only for test environment, you do not need this in SAP Gateway Server.
         data-sap-ui-preload="async"
         data-sap-ui-resourceroots='{
             "sap.ui.demo.basicTemplate": "./",
-            "cencosud.libs.external.polyfill": "/cencosud/libs/external/polyfill/"
+            "iamsoft.libs.external.polyfill": "resources/external-libs/dist/"
             }'>
     </script>
 ```
-Obiously there is configured a proxy mapping the resources of the library with the specified path.
+Obiously `resources` was mapped with node_modules folder in `Grunfile.js` and external-libs was added as node package dependency.
 
-- `./manifest.json`: This is the important part. We indicate ourr custom library as dependency.
+- `./manifest.json`: This is the important part. We indicate our custom library as dependency.
 ```json
     "sap.ui5": {
         "dependencies": {
@@ -63,12 +72,7 @@ Obiously there is configured a proxy mapping the resources of the library with t
     </mvc:View>
 ```
 
-
 ## Getting started
-
-0.Install the library and create a proxy to it:
-- Library: [https://github.com/sebasgoldberg/external-libs.git](https://github.com/sebasgoldberg/external-libs.git)
-- Proxy: /cencosud/libs/external/polyfill/
 
 1.Install node.js (get it from [nodejs.org](http://nodejs.org/)).
   * If working behind a proxy, you need to configure it properly (HTTP_PROXY / HTTPS_PROXY / NO_PROXY environment variables)
