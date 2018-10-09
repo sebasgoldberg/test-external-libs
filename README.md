@@ -66,7 +66,7 @@ Obiously there is configured a proxy mapping the resources of the library with t
 ## Getting started
 
 0.Install the library and create a proxy to it:
-- Library: [](https://github.com/sebasgoldberg/external-libs.git)
+- Library: [https://github.com/sebasgoldberg/external-libs.git](https://github.com/sebasgoldberg/external-libs.git)
 - Proxy: /cencosud/libs/external/polyfill/
 
 1.Install node.js (get it from [nodejs.org](http://nodejs.org/)).
