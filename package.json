@@ -1,6 +1,6 @@
 {
   "name": "test-external-libs",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "External SAPUI5 Library Test Usage",
   "private": false,
   "scripts": {
