@@ -1,8 +1,8 @@
 {
-  "name": "openui5-basic-template-app",
+  "name": "test-external-libs",
   "version": "0.1.0",
-  "description": "Best-practice starting point for building a freestyle app",
-  "private": true,
+  "description": "External SAPUI5 Library Test Usage",
+  "private": false,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -14,7 +14,6 @@
     "babel-plugin-transform-es2015-modules-ui5": "^6.0.0-alpha.2",
     "babel-preset-env": "^1.7.0",
     "eslint-plugin-openui5": "0.1.0",
-    "external-libs": "^0.1.1",
     "grunt": "^1.0.3",
     "grunt-babel": "^7.0.0",
     "grunt-contrib-clean": "^0.6.0",
@@ -28,5 +27,7 @@
     "grunt-zip": "^0.16.2",
     "load-grunt-tasks": "^4.0.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "external-libs": "^0.1.1"
+  }
 }
