@@ -1,6 +1,6 @@
 <mvc:View
-	controllerName="sap.ui.demo.basicTemplate.controller.App"
-    xmlns:pf="cencosud.libs.external.polyfill.control"
+	controllerName="iamsoft.test.lib.controller.App"
+    xmlns:pf="iamsoft.libs.external.polyfill.control"
 	xmlns:mvc="sap.ui.core.mvc"
 	displayBlock="true"
 	xmlns="sap.m">

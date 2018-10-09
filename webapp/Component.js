@@ -1,10 +1,10 @@
 import UIComponent from "sap/ui/core/UIComponent";
-import models from "sap/ui/demo/basicTemplate/model/models";
+import models from "iamsoft/test/lib/model/models";
 
 /*eslint no-unused-vars: ["error", { "varsIgnorePattern": "polyfill" }]*/
-//import polyfill from "cencosud/libs/external/polyfill";
+//import polyfill from "iamsoft/libs/external/polyfill";
 
-export default UIComponent.extend("sap.ui.demo.basicTemplate.Component", {
+export default UIComponent.extend("iamsoft.test.lib.Component", {
 
     metadata: {
         manifest: "json"
