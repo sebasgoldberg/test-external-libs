@@ -42,7 +42,7 @@ Obiously `resources` was mapped with node_modules folder in `Grunfile.js` and ex
         "dependencies": {
             "libs": {
                 "<other library>": {},
-                "cencosud.libs.external.polyfill": {}
+                "iamsoft.libs.external.polyfill": {}
             }
         }
     }
@@ -53,7 +53,7 @@ Obiously `resources` was mapped with node_modules folder in `Grunfile.js` and ex
     <mvc:View
         controllerName="sap.ui.demo.basicTemplate.controller.App"
         <!-- Here we define the namespace -->
-        xmlns:pf="cencosud.libs.external.polyfill.control"
+        xmlns:pf="iamsoft.libs.external.polyfill.control"
         xmlns:mvc="sap.ui.core.mvc"
         displayBlock="true"
         xmlns="sap.m">
