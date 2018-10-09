@@ -2,7 +2,7 @@ import UIComponent from "sap/ui/core/UIComponent";
 import models from "sap/ui/demo/basicTemplate/model/models";
 
 /*eslint no-unused-vars: ["error", { "varsIgnorePattern": "polyfill" }]*/
-import polyfill from "sap/ui/demo/basicTemplate/lib/polyfill";
+//import polyfill from "cencosud/libs/external/polyfill";
 
 export default UIComponent.extend("sap.ui.demo.basicTemplate.Component", {
 
@@ -15,7 +15,9 @@ export default UIComponent.extend("sap.ui.demo.basicTemplate.Component", {
      * @public
      * @override
      */
-    init: function() {
+    init: async function() {
+        
+        await Promise.resolve(1);
 
         // call the base component's init function
         UIComponent.prototype.init.apply(this, arguments);

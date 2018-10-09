@@ -1,5 +1,6 @@
 <mvc:View
 	controllerName="sap.ui.demo.basicTemplate.controller.App"
+    xmlns:pf="cencosud.libs.external.polyfill.control"
 	xmlns:mvc="sap.ui.core.mvc"
 	displayBlock="true"
 	xmlns="sap.m">
@@ -8,7 +9,9 @@
 			<Page
 				id="page"
 				title="{i18n>title}">
-				<content></content>
+				<content>
+                    <pf:MyControl/>
+                </content>
 			</Page>
 		</pages>
 	</App>
