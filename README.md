@@ -11,6 +11,7 @@ You can found the specific code for reuse in the following files:
 - `./webapp/index.html`:
 This is only for test environment, you do not need this in SAP Gateway Server.
 ```html
+    <!-- Here we told told to SAPUI5 where it can find our library resources -->
     <script id="sap-ui-bootstrap"
         src="https://sapui5.hana.ondemand.com/1.52.13/resources/sap-ui-core.js"
         data-sap-ui-libs="sap.m"
@@ -19,7 +20,6 @@ This is only for test environment, you do not need this in SAP Gateway Server.
         data-sap-ui-preload="async"
         data-sap-ui-resourceroots='{
             "sap.ui.demo.basicTemplate": "./",
-            <!-- Here we told told to SAPUI5 where it can find our library resources -->
             "cencosud.libs.external.polyfill": "/cencosud/libs/external/polyfill/"
             }'>
     </script>
